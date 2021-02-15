@@ -14,7 +14,7 @@ resource "azurerm_virtual_network" "network" {
 # This subnet is used to assign IPs on the virtual network for Cluster nodes and pods
 # https://www.terraform.io/docs/providers/azurerm/r/subnet.html
 resource "azurerm_subnet" "subnet" {
-  name                 = "en-services"
+  name                 = "gen3-services"
   resource_group_name  = data.azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.network.name
   address_prefixes     = ["10.1.0.0/16"]

@@ -22,9 +22,9 @@ This is an overview of the Services deployed through this deployment. The author
 | --- | --- | --- |
 | Managed Kubernetes | `azurerm_kubernetes_cluster` | Azure's managed `k8s` |
 | PSQL Server | `azurerm_postgresql_server` | Azure's managed Postgres DB |
-<!-- | KeyVault | `azurerm_key_vault` | Azure's Key Management Service. All secrets required by the application, such as its signing key and DB access credentials, are provisioned automatically using Terraform into this KeyVault. | -->
+| KeyVault | `azurerm_key_vault` | Azure's Key Management Service. All secrets required by the application, such as its signing key and DB access credentials, are provisioned automatically using Terraform into this KeyVault. |
 
-> **Note**: to learn more about the use of Managed Identity in this deployment, refer to the [Managed Identity](./docs/MANAGED_IDENTITY.md) documentation
+<!-- > **Note**: to learn more about the use of Managed Identity in this deployment, refer to the [Managed Identity](./docs/MANAGED_IDENTITY.md) documentation -->
 
 ### Security
 
@@ -155,7 +155,7 @@ use this backend unless the backend configuration changes.
 ## TODO
 
 - [ ] Create pipelines
-- [ ] Add Azure KeyVault
+- [X] Add Azure KeyVault
 - [ ] Add PSQL DB Firewall Rule
 - [ ] Add Log Analytics Workbook
 - [ ] Add CNAME Records and Frontdoor?

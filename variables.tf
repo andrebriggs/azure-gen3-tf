@@ -75,3 +75,9 @@ variable "output_directory" {
   type        = string
   description = "Directory for output files"
 }
+
+variable "ip_whitelist" {
+  type        = list(string)
+  description = "A whiltelist of IPs that should have access to resources provisioned into the virtual network"
+  default = []
+}
